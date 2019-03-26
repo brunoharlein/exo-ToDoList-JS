@@ -12,16 +12,16 @@ function addListItem(itemToAdd) {
 addItem.onclick = function() {
   var itemToAdd = input.value;
 
-  if(itemToAdd.length > 0) {
+  if (itemToAdd.length > 0) {
     addListItem(itemToAdd);
   }
 };
 
 input.onkeyup = function(event) {
-  if(event.keyCode === 13) {
+  if (event.keyCode === 13) {
     var itemToAdd = input.value;
 
-    if(itemToAdd.length > 0) {
+    if (itemToAdd.length > 0) {
       addListItem(itemToAdd);
     }
   }
